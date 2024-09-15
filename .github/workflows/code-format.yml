@@ -13,6 +13,3 @@ jobs:
         run: npm install
       - name: Format code with Prettier
         run: npm run format
-      - name: Remove console logs
-        run: |
-          find src \( -name "*.js" -o -name "*.jsx" -o -name "*.ts" -o -name "*.tsx" \) -exec sed -i '/console.log/d' {} +
